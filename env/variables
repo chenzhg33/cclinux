@@ -1,0 +1,3 @@
+export CHEATCOLORS=true
+export EDITOR=vim
+#export PS1='[\u@\[\e[1;36m\]\w\[\e[0m\]] '

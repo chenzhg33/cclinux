@@ -1,0 +1,72 @@
+man()
+{
+    env \
+    LESS_TERMCAP_mb=$(printf "\e[1;31m") \
+    LESS_TERMCAP_md=$(printf "\e[1;31m") \
+    LESS_TERMCAP_me=$(printf "\e[0m") \
+    LESS_TERMCAP_se=$(printf "\e[0m") \
+    LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+    LESS_TERMCAP_ue=$(printf "\e[0m") \
+    LESS_TERMCAP_us=$(printf "\e[1;32m") \
+    man "$@"
+}
+
+fuck () {
+    TF_PYTHONIOENCODING=$PYTHONIOENCODING;
+    export TF_SHELL=zsh;
+    xport TF_ALIAS=fuck;
+    export TF_HISTORY="$(fc -ln -10)";
+    export PYTHONIOENCODING=utf-8;
+    TF_CMD=$(
+         thefuck THEFUCK_ARGUMENT_PLACEHOLDER $@
+     ) && eval $TF_CMD;
+    unset TF_HISTORY;
+    export PYTHONIOENCODING=$TF_PYTHONIOENCODING;
+    test -n "$TF_CMD" && print -s $TF_CMD
+}
+
+awk1() {
+    awk '{print $1}'
+}
+awk2() {
+    awk '{print $2}'
+}
+awk3() {
+    awk '{print $3}'
+}
+awk4() {
+    awk '{print $4}'
+}
+awk5() {
+    awk '{print $5}'
+}
+awk6() {
+    awk '{print $6}'
+}
+awk7() {
+    awk '{print $7}'
+}
+awk8() {
+    awk '{print $8}'
+}
+awk9() {
+    awk '{print $9}'
+}
+awk10() {
+    awk '{print $10}'
+}
+awk11() {
+    awk '{print $11}'
+}
+awk12() {
+    awk '{print $12}'
+}
+awk13() {
+    awk '{print $13}'
+}
+awk14() {
+    awk '{print $14}'
+}
+awk15() {
+    awk '{print $15}'
+}

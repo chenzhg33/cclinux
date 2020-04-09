@@ -1,0 +1,31 @@
+alias c='cat'
+alias d='df -h'
+alias u='du -csh *'
+alias f='find . -name'
+alias i='ifconfig'
+alias v='vim'
+alias k='kill -9'
+alias p='ps uax'
+alias l='ls -lh'
+
+
+alias lt='ls -lrt --color=auto'
+alias la='ls -la --color=auto'
+alias vi='vim'
+alias fk='fuck'
+alias cht='cheat'
+
+alias igrep='grep -i'
+
+alias dc='docker container '
+alias di='docker image'
+alias dcl='docker container ls'
+
+alias g++='g++ -std=c++11'
+alias gproto='g++ -std=c++11  -lprotobuf -lpthread -I/usr/local/proto/include'
+
+alias hod='od -Ad -a'
+
+
+alias 'psvr'='python -m SimpleHTTPServer'
+alias 'igrep'='grep -i'
