@@ -2,6 +2,7 @@
 
 basedir=$(cd $(dirname $0); pwd)
 userfile=$HOME/.bashrc
+envdir=$HOME/.env
 content='# User specific aliases and functions
 for f in $HOME/.env/*
 do
@@ -10,7 +11,13 @@ done
 '
 key=$(echo "$content" | head -n 1)
 
-cp -r $basedir/env $HOME/.env
+cd $basedir
+mkdir -p $envdir
+
+for file in $envdir/*;
+do
+    mv $file $HOME/.env
+done
 chmod -R a+x $HOME/.env
 
 if [[ -f $HOME/.profile ]]; then
