@@ -1,5 +1,6 @@
 #! /bin/bash
 
+basedir=$(cd $(dirname $0); pwd)
 userfile=$HOME/.bashrc
 content='# User specific aliases and functions
 for f in $HOME/.env/*
@@ -8,6 +9,9 @@ do
 done
 '
 key=$(echo "$content" | head -n 1)
+
+cp -r $basedir/env $HOME/.env
+
 if [[ -f $HOME/.profile ]]; then
     echo "userfile: $HOME/.profile exist"
     if ! grep -q "$key" $HOME/.profile; then
