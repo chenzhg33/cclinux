@@ -11,6 +11,7 @@ done
 key=$(echo "$content" | head -n 1)
 
 cp -r $basedir/env $HOME/.env
+chmod -R a+x $HOME/.env
 
 if [[ -f $HOME/.profile ]]; then
     echo "userfile: $HOME/.profile exist"
