@@ -16,7 +16,7 @@ mkdir -p $envdir
 
 for file in $basedir/env/*;
 do
-    mv $file $envdir
+    cp $file $envdir
 done
 chmod -R a+x $envdir
 
