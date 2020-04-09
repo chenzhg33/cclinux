@@ -14,11 +14,11 @@ key=$(echo "$content" | head -n 1)
 cd $basedir
 mkdir -p $envdir
 
-for file in $envdir/*;
+for file in $basedir/env/*;
 do
-    mv $file $HOME/.env
+    mv $file $envdir
 done
-chmod -R a+x $HOME/.env
+chmod -R a+x $envdir
 
 if [[ -f $HOME/.profile ]]; then
     echo "userfile: $HOME/.profile exist"
