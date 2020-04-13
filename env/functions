@@ -14,7 +14,7 @@ man()
 fuck () {
     TF_PYTHONIOENCODING=$PYTHONIOENCODING;
     export TF_SHELL=zsh;
-    xport TF_ALIAS=fuck;
+    export TF_ALIAS=fuck;
     export TF_HISTORY="$(fc -ln -10)";
     export PYTHONIOENCODING=utf-8;
     TF_CMD=$(
