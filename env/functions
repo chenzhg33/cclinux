@@ -25,48 +25,56 @@ fuck () {
     test -n "$TF_CMD" && print -s $TF_CMD
 }
 
+manc() {
+    if [[ -d /usr/share/man/zh_CN ]]; then
+        MANPATH=/usr/share/man/zh_CN man "$@"
+    else
+        man "$@"
+    fi
+}
+
 awk1() {
-    awk '{print $1}'
+    awk '{print $1}' "$@"
 }
 awk2() {
-    awk '{print $2}'
+    awk '{print $2}' "$@"
 }
 awk3() {
-    awk '{print $3}'
+    awk '{print $3}' "$@"
 }
 awk4() {
-    awk '{print $4}'
+    awk '{print $4}' "$@"
 }
 awk5() {
-    awk '{print $5}'
+    awk '{print $5}' "$@"
 }
 awk6() {
-    awk '{print $6}'
+    awk '{print $6}' "$@"
 }
 awk7() {
-    awk '{print $7}'
+    awk '{print $7}' "$@"
 }
 awk8() {
-    awk '{print $8}'
+    awk '{print $8}' "$@"
 }
 awk9() {
-    awk '{print $9}'
+    awk '{print $9}' "$@"
 }
 awk10() {
-    awk '{print $10}'
+    awk '{print $10}' "$@"
 }
 awk11() {
-    awk '{print $11}'
+    awk '{print $11}' "$@"
 }
 awk12() {
-    awk '{print $12}'
+    awk '{print $12}' "$@"
 }
 awk13() {
-    awk '{print $13}'
+    awk '{print $13}' "$@"
 }
 awk14() {
-    awk '{print $14}'
+    awk '{print $14}' "$@"
 }
 awk15() {
-    awk '{print $15}'
+    awk '{print $15}' "$@"
 }
